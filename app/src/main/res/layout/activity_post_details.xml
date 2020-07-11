@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <TextView
+        android:id="@+id/tvUsernameDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        tools:text="shreya" />
+
+    <ImageView
+        android:id="@+id/ivImageDetails"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/tvUsernameDetails"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:scaleType="centerCrop"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/btnLikeDetails"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/ivImageDetails"
+        android:background="@drawable/ufi_heart" />
+
+    <TextView
+        android:id="@+id/tvDescriptionDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnLikeDetails"
+        android:layout_marginBottom="8dp"
+        tools:text="lol hello" />
+
+    <TextView
+        android:id="@+id/tvDateDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDescriptionDetails"
+        android:layout_marginBottom="8dp"
+        tools:text="lol hello" />
+
+    <TextView
+        android:id="@+id/tvNumLikesDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tvDescriptionDetails"
+        android:layout_below="@id/ivImageDetails"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/btnLikeDetails" />
+
+</RelativeLayout>
